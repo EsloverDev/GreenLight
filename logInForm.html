@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLight</title>
+    <link rel="stylesheet" href="Css/logInFormStyles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img id="logo" src="D:\Eslover\ADSO\ProyectoGreenLight\Imagenes\saveFreepik.png" alt="logo">
+            <button class="button">GreenLight</button>
+        </div>
+        <div id="contenido">
+            <h1>Registro de usuario nuevo</h1>
+            <form action="">
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="pNombre">Nombres:</label>
+                    </div>
+                    <div class="colum75">
+                        <input type="text" id="pNombre" name="nombres" maxlength="50" placeholder="Tus nombres">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="pApellido">Apellidos:</label>
+                    </div>
+                    <div class="colum75">
+                        <input type="text"  id="pApellido" name="apellidos" maxlength="50" placeholder="Tus apellidos">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="tDocumento">Tipo de documento:</label>
+                    </div>
+                    <div>
+                        <select id="tDocumento" name="documento">
+                            <option>CC</option>
+                            <option>CE</option>
+                            <option>TI</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="nDocumento">N&uacutemero de documento:</label>
+                    </div>
+                    <div class="colum75">
+                        <input type="number" id="nDocumento" name="documentoN" maxlength="20" placeholder="Número de documento">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="fecha">Fecha de nacimiento:</label>
+                    </div>
+                    <div class="colum75">
+                        <input type="date" id="fecha" name="fNacimiento" maxlength="10">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="colum75">
+                        <input type="text" id="email" name="Email" maxlength="50" placeholder="email">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="colum25">
+                        <label for="contrasena">Contrase&ntildea:</label>
+                    </div>
+                    <div class="colum75">
+                        <input type="text" id="contrasena" name="Password" placeholder="Password">
+                    </div>
+                </div>
+            </form>
+            <h2>Use m&iacutenimo una letra, un n&uacutemero y siete caracteres</h2>
+            <button class="button2">Registrarse</button>
+        </div>
+    </div>
+</body>
+</html>

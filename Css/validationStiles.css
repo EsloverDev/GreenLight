@@ -1,0 +1,85 @@
+body{
+    background: #edede9;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 10;
+    margin: 10;
+}
+
+#container{
+    width: 90%;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#cabecera{
+    background: #457b9d;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,.5);
+    padding: 0.5em;
+}
+
+#cabecera #logo{
+    width: 40px;
+    vertical-align: middle;
+}
+
+#contenido{
+    background: #457b9d;
+    text-align: center;
+    padding: 0.5em;
+    margin: 3em 15em;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.button{
+    background-color: #588157;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: #edede9;
+    color: black;
+    border: solid #588157;
+}
+
+.boxInput{
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #edede9;
+}
+
+.button1{
+    background-color: #edede9;
+    font-size: 12px;
+    margin-top: 1em;
+    border: none;
+}
+
+.button2{
+    background-color: #588157;
+    border: solid black;
+    margin: 10px;
+    border-radius: 14px;
+    vertical-align: middle;
+    margin: 2em 1em;
+}
+
+.button3{
+    background-color: #588157;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 2em 0;
+}
