@@ -1,25 +1,16 @@
 body{
     background: #edede9;
-    text-align: center;
     font-family: Arial;
-    font-size: 16px;
-    padding: 10;
-    margin: 10;
 }
 
 #container{
     width: 90%;
-    padding: 0;
-    text-align: left;
     margin: 0 auto;
 }
 
 #cabecera{
     background: #457b9d;
     box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
-    color: #edede9;
-    font-weight: bold;
-    margin: 0;
     padding: 0.5em;
 }
 
@@ -28,19 +19,38 @@ body{
     vertical-align: middle;
 }
 
-#footer{
+.volver{
     background: #edede9;
+    padding-top: 2em;
+    margin: 2em;
+}
+
+.botones{
+    text-align: center;
+    padding: 2em;
+    display: grid;
+    grid-column-gap: 4rem;
+    grid-template-columns: 4fr 4fr;
+    min-height: 30vh;
+}
+
+#banner{
+    text-align: center;
+}
+
+#footer{
     text-align: center;
     padding: 0.5em;
     display: grid;
     grid-column-gap: 2rem;
-    grid-row-gap: .5rem;
     grid-template-columns: 4fr 3fr;
-    min-height: 30vh;
 }
 
-#footer h1{
+h1{
     font-size: 25px;
+}
+
+#titulo{
     text-align: center;
 }
 
@@ -48,7 +58,6 @@ body{
     background: #457b9d;
     padding: 1em;
     border-radius: 20px;
-    border-color: black;
     border-style: solid;
 }
 
@@ -57,15 +66,177 @@ body{
     border-style: solid;
     padding: 1em;
     border-radius: 20px;
-    border-color: black;
+}
+
+#contenedor1{
+    background: #457b9d;
+    text-align: center;
+    padding: 0.5em;
+    margin: 1em 15em;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#contenedor1 h1{
+    font-size: 25px;
+    margin: 0;
+}
+
+#contenedor1 h2{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0em 10em;
+    text-align: justify;
+}
+
+#contenedor2{
+    background: #457b9d;
+    text-align: center;
+    padding: 0.5em;
+    margin: 3em 15em;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#contenedor3{
+    background: #457b9d;
+    padding: 0.3em;
+    margin: 0.5em 15em;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#contenedor3 h1{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+#contenedor4 {
+    display: grid;
+    grid-column-gap: .1rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: 1fr 3fr;
+    min-height: 65vh;
+}
+
+aside {
+    background-color: #457b9d;
+    border-radius: 12px;
+}
+
+aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li {
+    border-radius: 20px;
+    margin: 1%;
+    padding: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #edede9;
+    border: solid;
+    border-color: #588157;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.boxInput{
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #edede9;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+input{
+    width: 90%;
+    padding: 10px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #edede9;
+    resize: vertical;
+}
+
+input:focus{
+    border: 1px solid;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+select{
+    width: 10%;
+    padding: 10px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #edede9;
+    float: left;
+}
+
+.colum25{
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+.colum75{
+    float: left;
+    width: 55%;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+.fila::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p{
+    font-size: 15px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: right;
+    margin-top: 0;
+}
+
+section{
+    border: solid #457b9d;
+    border-radius: 12px;
+    margin: 1%;
+    padding: 2%;
+}
+
+.explicacion{
+    text-align: justify;
+    font-size: 16px;
 }
 
 .button{
     background-color: #588157;
     border: solid;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     border-radius: 12px;
@@ -74,7 +245,6 @@ body{
 
 .button:hover{
     background-color: #edede9;
-    color: black;
     border: solid #588157;
 }
 
@@ -82,8 +252,6 @@ body{
     background-color: #588157;
     border: solid;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     border-radius: 12px;
@@ -93,7 +261,6 @@ body{
 
 .button1:hover{
     background-color: #edede9;
-    color: black;
     border: solid #588157;
 }
 
@@ -102,8 +269,7 @@ body{
     border: solid;
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 34px;
     font-weight: bold;
     border-radius: 12px;
     transition-duration: 0.4s;
@@ -115,3 +281,97 @@ body{
     border: solid #588157;
 }
 
+.button3{
+    background-color: #edede9;
+    border: none;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 12px;
+    float: right;
+    transition-duration: 0.4s;
+}
+
+.button3:hover{
+    background-color: black;
+    color: #edede9;
+    border-radius: 12px;
+}
+
+.button4{
+    background-color: #588157;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 50%;
+    margin: 1em;
+    transition-duration: 0.4s;
+}
+
+.button4:hover{
+    background-color: #edede9;
+    color: black;
+    border: solid #588157;
+}
+
+.button5{
+    background-color: #588157;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 50%;
+    margin: 3px;
+    transition-duration: 0.4s;
+}
+
+.button5:hover{
+    background-color: #edede9;
+    color: black;
+    border: solid #588157;
+}
+
+.button6{
+    background-color: #edede9;
+    font-size: 12px;
+    margin-top: 1em;
+    border: none;
+}
+
+.button7{
+    background-color: #588157;
+    border: solid black;
+    border-radius: 14px;
+    vertical-align: middle;
+    margin: 2em 1em;
+}
+
+.button8{
+    background-color: #588157;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 2em 0;
+}
+
+.button9{
+    background-color: #588157;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 50%;
+    margin: 0 25%;
+    transition-duration: 0.4s;
+}
+
+.button9:hover{
+    background-color: #edede9;
+    border: solid #588157;
+}
